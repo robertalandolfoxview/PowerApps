@@ -1,0 +1,60 @@
+{
+  "8c7ecce4-4c79-4846-8393-6541759748f6": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "9ec543b5-2c78-4ef2-9498-61c266df155a"
+    ],
+    "id": "8c7ecce4-4c79-4846-8393-6541759748f6"
+  },
+  "9ec543b5-2c78-4ef2-9498-61c266df155a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1618/1.0.1618.3179/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "8c7ecce4-4c79-4846-8393-6541759748f6": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "8c7ecce4-4c79-4846-8393-6541759748f6"
+        }
+      }
+    },
+    "datasets": {
+      "b!DWaNjKlvsEuxjHRR5C8HdXhQAcwWedZElZ89LCBBVbKD6INdwDMkS6kcZx-0ybKd.01BGGP3VPPBGFTUHJGXVCZ4SLAGRT2NOQF": {
+        "dataSources": {
+          "Inventory": {
+            "tableName": "Inventory"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Inventory"
+    ],
+    "dependencies": {
+      "fileSource": "8c7ecce4-4c79-4846-8393-6541759748f6"
+    },
+    "dependents": [],
+    "id": "9ec543b5-2c78-4ef2-9498-61c266df155a"
+  }
+}
